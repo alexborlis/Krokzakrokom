@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Krokzakrokom</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="list_fragment_label">Список задач</string>
+    <string name="add_fragment_label">Додати задачу</string>
+    <string name="add_first_task_message">Додайте свою першу задачу</string>
+    <string name="next">Next</string>
+    <string name="add">Додати</string>
+    <string name="title">Задача</string>
+    <string name="description">Опис</string>
+
+</resources>

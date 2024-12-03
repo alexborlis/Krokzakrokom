@@ -1,0 +1,11 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath libs.gradle // Android Gradle Plugin
+        classpath libs.kotlin.gradle.plugin // Kotlin Plugin
+        classpath libs.hilt.android.gradle.plugin // Hilt Plugin
+    }
+}

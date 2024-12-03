@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.example.krokzakrokom'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.krokzakrokom"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.hilt.android
+    testImplementation libs.junit.jupiter
+    annotationProcessor libs.hilt.compiler
+    implementation libs.androidx.core.ktx
+    kapt libs.hilt.compiler
+
+    implementation libs.androidx.preference
+
+    implementation libs.androidx.lifecycle.viewmodel
+    implementation libs.androidx.lifecycle.livedata
+
+    implementation libs.gson
+
+
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    testImplementation libs.mockito.core
+    androidTestImplementation libs.espresso.core
+    testImplementation libs.androidx.core.testing
+}

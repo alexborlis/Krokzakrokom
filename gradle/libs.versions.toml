@@ -1,0 +1,51 @@
+[versions]
+agp = "8.6.1"
+coreKtx = "1.13.1"
+coreTesting = "2.2.0"
+gradle = "8.1.4"
+gson = "2.10.1"
+hiltAndroid = "2.51"
+hiltCompiler = "2.51.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinGradlePlugin = "1.9.10"
+lifecycleViewmodel = "2.8.7"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+mockitoCore = "4.0.0"
+navigationFragment = "2.8.3"
+navigationUi = "2.8.3"
+preferenceVersion = "1.2.1"
+junitJupiter = "5.8.1"
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycleViewmodel" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleViewmodel" }
+androidx-preference = { module = "androidx.preference:preference", version.ref = "preferenceVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-gradle-plugin = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hiltCompiler" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiter" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.10" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version = "1.9.10" }
+
+
